@@ -1,0 +1,35 @@
+.testimonials {
+    &__header {
+        margin-top: 2em;
+        text-align: center;
+        font-family: $font-family-challenge-secondary;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    &__item {
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__author {
+        font-weight: bold;
+    }
+
+    &__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+    }
+}
