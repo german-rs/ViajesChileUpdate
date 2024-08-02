@@ -11985,7 +11985,8 @@ body {
 }
 .about__image {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -11993,6 +11994,13 @@ body {
   margin-top: 2em;
   text-align: center;
   font-family: "Nunito", sans-serif;
+}
+
+.highlights-card__img {
+  height: 100%;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimonials__header {
@@ -12011,13 +12019,19 @@ body {
   text-align: center;
 }
 .testimonials__text {
-  font-size: 1rem;
+  font-size: 18px;
   margin-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #f6e2aa;
 }
 .testimonials__author {
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 300;
+  color: #f6e2aa;
 }
 .testimonials__image {
+  border: 2px solid #f6e2aa;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -12038,6 +12052,22 @@ body {
   color: #FAFAFA;
 }
 
+.carousel-item {
+  height: 500px;
+}
+.carousel-item__image {
+  height: 100%;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-item {
+    height: 300px;
+  }
+}
 .separator {
   padding: 1em 0;
 }

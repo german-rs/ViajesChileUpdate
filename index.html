@@ -29,7 +29,7 @@
 
 <body>
   <!-- Nav. -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top container">
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">
         <img src="./assets/img/viajes.svg" alt="Logo Viajes Chile">
@@ -60,7 +60,7 @@
   <!-- Nav. -->
 
   <!-- Carousel. -->
-  <div id="carouselExampleCaptions" class="carousel slide">
+  <div id="carouselExampleCaptions" class="carousel slide container">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -71,21 +71,22 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="LLamas en un paisaje altiplanico">
+        <img src="./assets/img/carousel1.jpg" class="carousel-item__image d-block w-100"
+          alt="LLamas en un paisaje altiplanico">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="Moais al atardecer">
+        <img src="./assets/img/carousel2.jpg" class="carousel-item__image d-block w-100" alt="Moais al atardecer">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Pingüino tomando el sol">
+        <img src="./assets/img/carousel3.jpg" class="carousel-item__image d-block w-100" alt="Pingüino tomando el sol">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -105,7 +106,7 @@
 
 
   <!-- Quienes somos. -->
-  <section class="about">
+  <section class="about container">
     <h2 class="about__header">¿Quiénes somos?</h2>
 
     <div class="separator">
@@ -115,7 +116,7 @@
     <article class="about__article row">
 
       <div class="about__image-container col-12 col-md-6">
-        <img class="about__image" src="./assets/img/quienes-somos.jpg"
+        <img class="about__image d-none d-sm-none d-md-block" src="./assets/img/quienes-somos.jpg"
           alt="Cuatro jovenes disfrutando de sus vacaciones">
       </div>
 
@@ -140,7 +141,7 @@
   <!-- Quienes somos. -->
 
   <!-- Destacados. -->
-  <section class="highlights">
+  <section class="highlights container">
     <h2 class="highlights__header">Destacados</h2>
 
     <div class="separator">
@@ -149,18 +150,22 @@
 
     <div class="row">
       <!-- Card 1. -->
-      <div class="col-12 col-md-6">
+      <div class="col-6 col-lg-3">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="./assets/img/card1.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="./assets/img/card1.jpg" class="img-fluid highlights-card__img rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Región de los lagos</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-body-secondary">
+                      <i class="fa-solid fa-plane-up"></i> Vuelos desde:
+                    </small>$159.990</p>
+                </div>
               </div>
             </div>
           </div>
@@ -168,40 +173,45 @@
       </div>
 
       <!-- Card 2. -->
-      <div class="col-12 col-md-6">
+      <div class="col-6 col-lg-3">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="./assets/img/card2.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="./assets/img/card2.jpg" class="img-fluid highlights-card__img rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Desierto de Atacama</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-body-secondary">
+                      <i class="fa-solid fa-plane-up"></i> Vuelos desde:
+                    </small>$189.990</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-    </div>
-
-    <div class="row">
       <!-- Card 3. -->
-      <div class="col-12 col-md-6">
+      <div class="col-6 col-lg-3">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="./assets/img/card3.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="./assets/img/card3.jpg" class="img-fluid highlights-card__img rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Norte grande de Chile</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-body-secondary">
+                      <i class="fa-solid fa-plane-up"></i> Vuelos desde:
+                    </small>$289.990</p>
+                </div>
               </div>
             </div>
           </div>
@@ -209,18 +219,22 @@
       </div>
 
       <!-- Card 4. -->
-      <div class="col-12 col-md-6">
+      <div class="col-6 col-lg-3">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="./assets/img/card4.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="./assets/img/card4.jpg" class="img-fluid highlights-card__img rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Bosque mágico</h5>
+                <h5 class="card-title">Bosque muy mágico</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-body-secondary">
+                      <i class="fa-solid fa-plane-up"></i> Vuelos desde:
+                    </small>$259.990</p>
+                </div>
               </div>
             </div>
           </div>
@@ -228,12 +242,13 @@
       </div>
 
     </div>
+
   </section>
   <!-- Destacados. -->
 
 
   <!-- Testimonios. -->
-  <section class="testimonials">
+  <section class="testimonials container">
     <h2 class="testimonials__header">Testimonios</h2>
 
     <div class="separator">
@@ -271,12 +286,14 @@
 
 
   <!-- Contacto. -->
-  <section class="contact mb-5">
+  <section class="contact mb-5 container">
     <h2 class="contact__header">Contacto</h2>
 
     <div class="separator">
       <hr class="separator__line">
     </div>
+    <!-- Alerta -->
+    <div id="alertContainer"></div>
 
     <div class="contact__content row">
 
@@ -286,15 +303,21 @@
         <div class="row">
           <div class="col-md-6 col-6">
             <label class="form-label" for="">Nombre</label>
+            <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-title="Ingresa tu nombre completo"></i>
             <input class="form-control" type="text">
           </div>
           <div class="col-md-6 col-6">
             <label class="form-label" for="">Email</label>
+            <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-title="Ejemplo: ejemplo@dominio.com"></i>
             <input class="form-control" type="email">
           </div>
         </div>
         <div class="col-12">
           <label class="form-label" for="">Mensaje</label>
+          <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="¿En qué te podemos ayudar?"></i>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="form-check">
@@ -305,9 +328,35 @@
           </label>
         </div>
         <div>
-          <button class="btn btn-primary mt-3">Enviar</button>
+          <button class="btn btn-light mt-3" id="alertBtn">Enviar</button>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="terminosycondiciones" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Términos y condiciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt consequuntur sint velit
+                vel tempore doloremque explicabo ipsa. Quam, porro eligendi earum corporis reiciendis ut
+                culpa deleniti dolores veritatis id!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laudantium dolorum sint vitae
+                aut totam quia dicta necessitatibus? Quasi, reiciendis.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal. -->
+
+
 
       <!-- Columna 2. -->
       <div class="contact__info col-12 col-md-6">
