@@ -5,3 +5,9 @@
         font-family: $font-family-challenge-secondary;
     }
 }
+
+.highlights-card__img{
+    height: 100%;
+    background-size: contain;
+    object-fit: cover;
+}
