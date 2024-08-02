@@ -1,0 +1,13 @@
+.about{
+    &__header{
+        margin-top: 2em;
+        text-align: center;
+        font-family: $font-family-challenge-secondary;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+      }
+}

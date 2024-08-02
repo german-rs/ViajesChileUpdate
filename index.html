@@ -8,12 +8,339 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes Chile | descubre la aventura de viajar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Etiquetas meta -->
+  <meta name="author" content="Germán Riveros S.">
+  <meta name="description" content="Actualización Viajes Chile">
+  <meta name="keywords" content="Viajar, Chile, Turismo, Aventura, paisajes, Hoteles, Vuelos">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/899edd289a.js" crossorigin="anonymous"></script>
+
+  <!-- css. -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <title>Viajes Chile | Descubre la aventura de viajar</title>
 </head>
+
 <body>
-    
+  <!-- Nav. -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">
+        <img src="./assets/img/viajes.svg" alt="Logo Viajes Chile">
+        Viajes Chile
+      </a>
+      <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav. -->
+
+  <!-- Carousel. -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="LLamas en un paisaje altiplanico">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="Moais al atardecer">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Pingüino tomando el sol">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel. -->
+
+
+  <!-- Quienes somos. -->
+  <section class="about">
+    <h2 class="about__header">¿Quiénes somos?</h2>
+
+    <div class="separator">
+      <hr class="separator__line">
+    </div>
+
+    <article class="about__article row">
+
+      <div class="about__image-container col-12 col-md-6">
+        <img class="about__image" src="./assets/img/quienes-somos.jpg"
+          alt="Cuatro jovenes disfrutando de sus vacaciones">
+      </div>
+
+      <div class="about__text-container col-12 col-md-6">
+        <p class="about__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minima sed. Quas
+          veritatis dolores itaque distinctio aut est id neque, natus fuga, rem quia perspiciatis!
+          Eum fuga consequuntur nisi autem aliquid beatae fugiat ea. Doloremque, excepturi! Harum
+          dicta, molestias nesciunt aliquid sapiente illo iusto? Ad dolor fugiat quaerat enim
+          perspiciatis.
+        </p>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minima sed. Quas
+          veritatis dolores itaque distinctio aut est id neque, natus fuga, rem quia perspiciatis!
+          Eum fuga consequuntur nisi autem aliquid beatae fugiat ea. Doloremque, excepturi! Harum
+          dicta, molestias nesciunt aliquid sapiente illo iusto? Ad dolor fugiat quaerat enim
+          perspiciatis.
+        </p>
+      </div>
+    </article>
+  </section>
+  <!-- Quienes somos. -->
+
+  <!-- Destacados. -->
+  <section class="highlights">
+    <h2 class="highlights__header">Destacados</h2>
+
+    <div class="separator">
+      <hr class="separator__line">
+    </div>
+
+    <div class="row">
+      <!-- Card 1. -->
+      <div class="col-12 col-md-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/img/card1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Región de los lagos</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2. -->
+      <div class="col-12 col-md-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/img/card2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Desierto de Atacama</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <!-- Card 3. -->
+      <div class="col-12 col-md-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/img/card3.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Norte grande de Chile</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4. -->
+      <div class="col-12 col-md-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/img/card4.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bosque mágico</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Destacados. -->
+
+
+  <!-- Testimonios. -->
+  <section class="testimonials">
+    <h2 class="testimonials__header">Testimonios</h2>
+
+    <div class="separator">
+      <hr class="separator__line">
+    </div>
+
+    <div class="testimonials__list row">
+
+      <!-- testimonio 1. -->
+      <article class="testimonials__item col">
+        <p class="testimonials__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Possimus animi nesciunt illum facilis quam aspernatur deserunt officiis nam ducimus illo!</p>
+        <img src="./assets/img/testimonio1.jpg" alt="Autor 1" class="testimonials__image">
+        <p class="testimonials__author">Mariela</p>
+      </article>
+
+      <!-- testimonio 2. -->
+      <article class="testimonials__item col">
+        <p class="testimonials__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Possimus animi nesciunt illum facilis quam aspernatur deserunt officiis nam ducimus illo!</p>
+        <img src="./assets/img/testimonio2.jpg" alt="Autor 2" class="testimonials__image">
+        <p class="testimonials__author">Christian</p>
+      </article>
+
+      <!-- testimonio 3. -->
+      <article class="testimonials__item col">
+        <p class="testimonials__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Possimus animi nesciunt illum facilis quam aspernatur deserunt officiis nam ducimus illo!</p>
+        <img src="./assets/img/testimonio3.jpg" alt="Autor 3" class="testimonials__image">
+        <p class="testimonials__author">Fernanda</p>
+      </article>
+    </div>
+  </section>
+  <!-- Testimonios. -->
+
+
+  <!-- Contacto. -->
+  <section class="contact mb-5">
+    <h2 class="contact__header">Contacto</h2>
+
+    <div class="separator">
+      <hr class="separator__line">
+    </div>
+
+    <div class="contact__content row">
+
+      <!-- Columna 1. -->
+      <div class="contact__form-container col-12 col-md-6">
+
+        <div class="row">
+          <div class="col-md-6 col-6">
+            <label class="form-label" for="">Nombre</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-md-6 col-6">
+            <label class="form-label" for="">Email</label>
+            <input class="form-control" type="email">
+          </div>
+        </div>
+        <div class="col-12">
+          <label class="form-label" for="">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label text-decoration-underline" for="flexCheckDefault" data-bs-toggle="modal"
+            data-bs-target="#terminosycondiciones">
+            Acepto los términos y condiciones
+          </label>
+        </div>
+        <div>
+          <button class="btn btn-primary mt-3">Enviar</button>
+        </div>
+      </div>
+
+      <!-- Columna 2. -->
+      <div class="contact__info col-12 col-md-6">
+        <div class="row">
+
+          <div class="col-md-12 my-2">
+            <i class="fa-solid fa-phone fa-2x mx-3"></i>
+            <span>+56988877765</span>
+          </div>
+
+          <div class="col-md-12 my-2">
+            <i class="fa-solid fa-envelope fa-2x mx-3"></i>
+            <span>contacto@viajeschile.com</span>
+          </div>
+
+          <div class="col-md-12 my-2">
+            <i class="fa-brands fa-linkedin fa-2x mx-3"></i>
+            <span>ViajesChile</span>
+          </div>
+
+          <div class="col-md-12 my-2">
+            <i class="fa-brands fa-instagram fa-2x mx-3"></i>
+            <span>viajes_chile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Contacto. -->
+
+
+  <script type="module" src="./assets/js/index.js"></script>
 </body>
+
 </html>
