@@ -12044,11 +12044,17 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.navbar-brand img {
+.navbar__custom {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.navbar .navbar-brand img {
   width: 2em;
 }
-
-.nav-link {
+.navbar .nav-link {
   color: #FAFAFA;
 }
 
